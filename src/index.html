@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> -->
+
+
+        <link rel="stylesheet" href="styles.css">
+        <title>Careerwebsite</title>
+        <div id="navbar"></div>
+        <img id="logo" src="logo.jpeg" alt="mylogo">
+        <h2 style="text-align:center; color: green;">
+            Explorer
+        </h2>
+    </head>
+    <body style="color: #444444;">
+        <img id="banner" src="banner.jpg" alt="Banner" height="360">
+        <h2 style="text-align: left; color: #222222;">About</h2>
+            <div id="about">
+                <div id="description">
+                    <p style="margin-top: 0;">
+                        <!-- <h5> -->
+                            Bibendum nascetur ad nullam vestibulum commodo. Platea senectus porttitor parturient hendrerit
+                             libero litora leo dui rutrum. Elit urna at ornare hac enim nunc in congue montes. Turpis 
+                             platea id eros ex himenaeos elementum. Dis aliquam ridiculus purus elit a aliquet est vitae. 
+                             Quisque platea eget hac purus placerat laoreet. Ipsum felis eros venenatis vitae ornare platea.
+                             Id integer non nulla augue placerat libero tristique parturient. Vitae id per phasellus nostra;
+                              class et dui. Enim aliquam fames rhoncus elit, egestas eu cursus.
+                              Ex feugiat bibendum nunc sollicitudin bibendum. Odio neque potenti primis praesent nullam vivamus.
+                               Aliquet mauris magna ipsum vel varius imperdiet malesuada. Mattis vestibulum interdum venenatis sit 
+                               dignissim turpis convallis. Ante cras nulla elit at ultrices sit malesuada. Aligula porttitor semper 
+                               id erat justo nam ornare. Congue finibus vitae erat dis urna blandit sit, feugiat mi. Nullam neque eleifend 
+                               class rutrum nisi cursus. Velit luctus finibus vel neque cursus fermentum magna proin?
+                        <div style="font-size: 20px;">
+                            <!-- <h2> -->
+                            We also offers two training camps.
+                            <ul>
+                                <li><a href="https://www.youtube.com/" target="_blank">Data Scientiest Training Camp</a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank">Web development training camp</a></li>
+                            </ul>
+                            <!-- </h2> -->
+                        </div>
+                    <!-- </h5> -->
+                    </p>
+                </div>
+                <div id="team">
+                    <img id="team-image" src="team.jpg" alt="Team"><!--Replaced team.jpg-->
+                </div>
+
+            </div>
+        <!-- </h2> -->
+
+
+        <h2>Job Opportunities</h2>
+        <div id="jobs">
+            <table id="jobs-table">
+                <tr class="jobs-header-row"> <!--Table row-->
+                    <th rowspan="2">Job Title</th> <!--Table heading-->
+                    <th colspan="2">Location</th>
+                    <th rowspan="2">Salary</th>
+                    <th rowspan="2">Posted On</th>
+                </tr>
+                <tr class="jobs-header-row">
+                    <th>City</th>
+                    <th>Country</th>
+
+                </tr>
+                <tr class="jobs-data-row">
+                    <td>Frontend Developer</td>
+                    <td>Bengaluru</td>
+                    <td>India</td>
+                    <td>Rs. 12,00,000</td>
+                    <td>Mar 3, 2023</td>
+                </tr>
+                <tr class="jobs-data-row">
+                    <td>Full Stack Developer</td>
+                    <td>New Delhi</td>
+                    <td>India</td>
+                    <td>Rs. 15,00,000</td>
+                    <td>Feb 1, 2023</td>
+                </tr>
+                <tr class="jobs-data-row">
+                    <td>Data Scientiest</td>
+                    <td>San Francisco</td>
+                    <td>USA</td>
+                    <td>$ 175,000</td>
+                    <td>Dec 22, 2022</td>
+                </tr>
+                <tr class="jobs-data-row">
+                    <td>Machine Learning Engineer</td>
+                    <td colspan="2">Remote</td>
+                    <td>$ 80,000</td>
+                    <td>Sep 19, 2022</td>
+                </tr>
+            </table>
+        </div>
+
+        <div></div> <!--TABLE-->
+
+
+
+        
+            <div id="application">Submit your Application<!--HTML FORMS-->
+                <form id="application-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label><br><!--<br> used for next line-->
+                        <input type="text" id="name" name="Full name" required><!--Text meaning you can type any form 
+                        of text, similarly there are "number","date" etc.-->
+                    </div><!--You specify the id attribute and you specify the for attribute in the label. It'll work 
+                    without the id but it is a good parctice -->
+                        <!--name attribute means when you click the submit button some data is picked up from the 
+                        form and the server is going to receive a form data in the "name" format -->
+                        <!--"required" means whether the data is required or not(which means the data is mandatory)-->
+                    <div class="form-group">
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label><br>
+                        <input type="number" id="phone" name="phone number" required placeholder="+919440066440">
+                    </div>
+                    <div class="form-group">
+                        <label for="dateofbirth">Date of Birth</label><br>
+                        <input type="date" id="dateofbirth" name="Date of Birth" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Position applied for</label><br>
+                        <select id="position" name="Position Applied For" required>
+                            <option value="">Select Position</option><!--Empty value kind of like a palce holder-->
+                            <option value="frontend developer">Frontend Developer</option> <!--value="frontend developer" means the server
+                            is going to see "frontend developer and the user is going to see "Frontend Developer"-->
+                            <option value="full stack developer">Full Stack Developer</option>
+                            <option value="data scientiest">Data Scientiest</option>
+                            <option value="ml engineer">ML Engineer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label name="resume">Upload Resume</label><br>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="coverletter">Cover Letter</label><br>
+                        <textarea id="coverletter" name="coverletter" rows="5" 
+                        required placeholder="Explain what makes you suitable for the job"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="terms"><!--Putting the input inside the label-->
+                            <input type="checkbox" id="terms" name="terms">
+                            I Agree to the terms and conditions.
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit Application">
+                    </div>
+                </form>
+                <!--Now use formbold for sending the data while submitting the form-->
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="footer">
+            <ul id="footer-links">
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                    Instagram
+                </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">
+                    Youtube
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        Facebook
+                    </a>
+                </li>
+            </ul> 
+            <span class="Copyright">© 2024, Indeevaram</span>
+        </div>
+
+    </body>
+</html>
