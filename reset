@@ -1,0 +1,151 @@
+[33mcommit bf14a26f8f29e3e167b94fb1d24c09a7cc937f19[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Wed Feb 5 03:55:48 2025 +0000
+
+    deleted unwanted text form about
+
+ src/index.html | 1 [31m-[m
+ 1 file changed, 1 deletion(-)
+
+[33mcommit 81cf3bbe0fa775fcf06a0633d033a89673d49fb4[m
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Sat Feb 1 12:44:40 2025 +0000
+
+    fixing the conflicts
+
+ .vscode/settings.json | 3 [32m+++[m
+ src/index.html        | 7 [31m-------[m
+ 2 files changed, 3 insertions(+), 7 deletions(-)
+
+[33mcommit 2e3710f63bd108ec79772a1c2f4c3df6e6ca65a3[m
+Merge: e226a98 792057e
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Sat Feb 1 12:41:26 2025 +0000
+
+    Merge remote-tracking branch 'origin'
+
+[33mcommit 792057ec5a943272de62f52cb944db57e4d55b94[m[33m ([m[1;31morigin/user2/about-change[m[33m, [m[1;32muser2/about-change[m[33m)[m
+Merge: 98270f3 a78eda7
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Sat Feb 1 17:54:14 2025 +0530
+
+    Merge pull request #3 from akhil-2025/user2/about-change
+    
+    Changed the about section a bit
+
+[33mcommit a78eda750a9d8044af3e043223401dde84de302d[m
+Author: aghilvs <aghilvs@gmail.com>
+Date:   Sat Feb 1 12:01:46 2025 +0000
+
+    Changed the about section a bit
+
+ src/index.html | 25 [32m++++++++++++++[m[31m-----------[m
+ 1 file changed, 14 insertions(+), 11 deletions(-)
+
+[33mcommit e226a98126879e0a3dfc87b7bca3d1958fde772d[m
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Sat Feb 1 11:25:51 2025 +0000
+
+    changed the description 'about'
+
+ src/index.html | 16 [32m+++++[m[31m-----------[m
+ 1 file changed, 5 insertions(+), 11 deletions(-)
+
+[33mcommit 3c6ab4f5bc697e2e10f82d116b57c59c5624f95f[m
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Sat Feb 1 11:16:44 2025 +0000
+
+    Changed the Heading from Eplorer to Career Explorer
+
+ src/index.html | 4 [32m++[m[31m--[m
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+[33mcommit 98270f320cff6197e71370b8eecbce78f8339f23[m
+Merge: eb2bfab bba8230
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Sat Feb 1 12:28:46 2025 +0530
+
+    Merge pull request #2 from akhil-2025/ag/add-meta-tags
+    
+    ag/add-meta-tags
+
+[33mcommit bba8230f279660ada42e2d14674a6a9ed597c588[m
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Sat Feb 1 06:21:01 2025 +0000
+
+    ag/add-meta-tags
+
+ src/{career_meta.jpeg.jpeg => career_meta.jpeg} | Bin
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit eb2bfaba35dcde1ccb09eb2f45377a7edc8d385d[m
+Merge: c17734e ff260e8
+Author: aghilvs <aghilvs@gmail.com>
+Date:   Sat Feb 1 11:45:59 2025 +0530
+
+    Merge pull request #1 from akhil-2025/ag/add-meta-tags
+    
+    added meta-tags
+
+[33mcommit ff260e87ca0859a1497a8505349486cf784fc236[m
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Sat Feb 1 06:06:14 2025 +0000
+
+    Added new OG Image, made some minor changes
+
+ src/career_meta.jpeg.jpeg | Bin [31m0[m -> [32m224821[m bytes
+ src/index.html            |   8 [32m++++[m[31m----[m
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+[33mcommit b35531784d3cebcd044c6071c12bafa213c3bda6[m
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Fri Jan 31 16:12:23 2025 +0000
+
+    added meta-tags
+
+ src/index.html | 15 [32m+++++++++++++++[m
+ 1 file changed, 15 insertions(+)
+
+[33mcommit c17734e1f2b47a160f0487ef85f37a9a4d22fedb[m
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Fri Jan 31 06:14:51 2025 +0000
+
+    deleted and added index
+
+ src/careerwebsite.html | 210 [31m--------------------------------------------------------------------------------------------------------------------------------[m
+ src/careerwebsite.zip  | Bin [31m759621[m -> [32m0[m bytes
+ 2 files changed, 210 deletions(-)
+
+[33mcommit a3410b6ccae79638fb3493661adaf9386f8d3f4c[m
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Fri Jan 31 06:06:31 2025 +0000
+
+    Changed the name to index.html
+
+ src/index.html | 210 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ 1 file changed, 210 insertions(+)
+
+[33mcommit de91ab2fae36718f28a84c6a74128bd3d8e4f8a1[m
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Fri Jan 31 05:50:35 2025 +0000
+
+    Added the website files
+
+ src/banner.jpg         | Bin [31m0[m -> [32m574066[m bytes
+ src/careerwebsite.html | 210 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ src/careerwebsite.zip  | Bin [31m0[m -> [32m759621[m bytes
+ src/logo.jpeg          | Bin [31m0[m -> [32m122338[m bytes
+ src/styles.css         | 172 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ src/team.jpg           | Bin [31m0[m -> [32m62718[m bytes
+ 6 files changed, 382 insertions(+)
+
+[33mcommit 407426b057b0e4a9fddc380f4f4a50546dcc73e8[m
+Author: akhil-2025 <beyondtheuniverse08@gmail.com>
+Date:   Fri Jan 31 10:53:39 2025 +0530
+
+    Initial commit
+
+ .gitignore | 130 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ LICENSE    |  21 [32m+++++++++++++++++++++[m
+ README.md  |   1 [32m+[m
+ 3 files changed, 152 insertions(+)
