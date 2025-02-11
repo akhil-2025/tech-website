@@ -1,134 +1,85 @@
-*{
-    font-size: 16px;
+/*Basic Styles (extra small devices-mobile)*/
+html{
+    font-size:14px;
 }
-
 body{
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
-    /* font-family: 'Quicksand', sans-serif; */
-    text-align: justify;
-    /* font-style: oblique; */
-    /* font-style: italic; */
-    font-style: inherit;
-    line-height: 1.6;
-    /* font-size: 16px; */
+    color:#444444;
+    font-size:1em;
 }
-h2{
-    font-size: 3rem; /* Font size will be three times 16px*/
-}
-
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Inter',sans-serif;
-    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-    /* text-transform: uppercase; */
-    text-decoration: underline;
-    /* text-decoration: overline; */
+    color:#222222
 }
-#navbar{
-    padding:20px;
-    margin: 0;
-}
-#logo{
-    height:100px;
-}
-h3{
-    text-align:left;
-    color:purple;
-}
-#banner {
-    width:100%;
-    object-fit: cover;/*Aspect ratio remains constant*/
-}
-#about {
-    display:flex; /*To arrange the data side by side */
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 8px;
-}
-#description {
-    width: 50%;
-    /* background-color: grey; */
-    text-align: justify;
-    padding-right: 8px;
-}
-#jobs {
-    /* text-align: center; */
-    max-width:800px;
-    margin: 0 auto;
-    padding: 8px;
-}
-#jobs-table{
-    width:100%;
-    border: 1px solid gray;
-    border-collapse: collapse;
-}
-.jobs-header-row th{
-    border: 1px solid gray;
-    padding: 8px; /* for adding space*/
-    background-color: aliceblue;
-    /* text-align: left; */
-    text-align: center;
-}
-
-.jobs-data-row td{
-    border: 1px solid violet;
-    /* border-right: 1px solid gray; */
-    padding: 8px;
-}
-#jobs-table tr:nth-child(odd) {
-    background-color: wheat;
-}
-
-h2 {
-    text-align: center;
-}
-h3 {
-    margin-bottom: 8px;
-    margin-top: 0;
-}
-#team {
-    width:50%;
-    /* background-color: violet; */
-    text-align: center;
-}
-#team-image{
-    border-radius: 10px;
-    width:100%;
-}
-
-
-.apply {
-    float: right;
-}
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.75rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.25rem;}
+h6{font-size: 1rem;}
 
 a {
-    text-decoration: none; /* To remonve the underline in the link*/
+   text-decoration: none;
+   color:#3B82F6;
 }
-#footer {
-    background-color: ghostwhite;
+a:hover, a:focus{
+    color:#1D4ED8;
+}
+#logo-with-text{
+    display:none;
+}
+#banner{height:170px;width:100%;object-fit: cover;}
+
+h1{
+    text-align: center;
+    margin:8px 0;
+}
+#about { 
+    display:flex; 
+    flex-direction:column;
+    max-width: 500px;
+    margin: 0 auto;
     padding: 8px;
-    margin-top: 30px;
+}
+h2{       /*For Job Opportunities*/
+    margin:8px 0;
     text-align: center;
-}
-#footer-links {
-    list-style: none;
-    text-align: center;
-    /* display: flex; To make the text in line. Flex apply to the parent */
-}
-#footer-links li {
-    display: inline;/* Applies to the child elements*/
-    margin: 0 16px;
-}
-.copyright {
-    color: grey;
 }
 
-/*FORMS..... */
+#jobs {
+    max-width:800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+#jobs-list{
+    display:block;
+}
+#jobs-table{
+    display:none;
+}
+.job{
+    border:1px solid #dddddd;
+    margin-top: 8px;
+    border-radius: 5px;
+    padding: 8px;
+}
+.job-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #222222;
+
+}
+.job-detail{
+    margin-top: 4px;
+    color: #555555;
+}
 #application{
     /* background-color: bisque; */
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     /* text-align: center; */
     padding: 0 8px;
@@ -138,14 +89,14 @@ a {
 }
 
 #application-form label{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     font-weight: 600;
 }
 #application-form div{
-    /* margin:16px; */
+    margin:16px;
 }
 #application-form input,select,textarea{
-    /* color: #444444; */
+    color: #444444;
     padding: 4px;
     font-size: 1.25rem;
     border-radius: 5px;
@@ -165,8 +116,269 @@ a {
     font-weight: 600;
     padding: 16px;
     cursor:pointer;
+}
+#footer {
+    background-color: ghostwhite;
+    padding: 8px;
+    margin-top: 30px;
+    text-align: center;
+    width:100%;
+}
+#footer-links {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    /* display: flex; */
+    /* flex-direction:column; */
+}
+#footer-links li {
+    /* display: inline; */
+    margin: 0 16px;
+    text-align: center;
+    /* width:100%; */
+}
+.copyright {
+    color: grey;
+    text-align: center;
+}
+
+
+/*Small devices (tablets)*/
+@media screen and (min-width:576px){
+
+html{font-size:16px;}
+#logo-with-text{display:block}
+#banner{height:300px;width:100%;object-fit: cover;}
+h1{margin: 16px 0;}
+}
+/*Medium devices(laptops)*/
+@media screen and (min-width:768px){
+#banner{height:350px;width:100%;object-fit:cover;}
+h1{margin:20px 0;}
+#about { 
+    display:flex; 
+    flex-direction:row;
+    max-width: 800px;
+}
+#description {
+    width: 50%;
+    padding-right: 8px;
+}
+h2{       /*For Job Opportunities*/
+    margin:24px 0;
+}
+#jobs{
+    min-width:800px;
+}
+#jobs-list{
+    display:none;
+}
+#jobs-table{
+    display:table; /*Default value for table tag is table*/
+    width:100%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+.jobs-header-row th{
+    border: 1px solid gray;
+    padding: 8px;
+    background-color: aliceblue;
+    text-align: left;
+    text-align: center;
+}
+
+.jobs-data-row td{
+    border: 1px solid violet;
+    border-right: 1px solid gray;
+    padding: 8px;
+}
+#jobs-table tr:nth-child(odd) {
+    background-color: wheat;
+}
+#footer-links{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
 
 }
-#name{
+/*Large Devices (desktops)*/
+@media screen and (min-width:992px){
+    #application{
+        max-width:800px;
+    }
+}
+
+
+/* *{
+    font-size: 16px;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
+    /* text-align: justify; */
+    /* font-style: oblique; */
+    /* font-style: italic; */
+    /* font-style: inherit; */
+    /* line-height: 1.6; */
+    /* font-size: 16px; */
+}
+/* h2{
+    font-size: 3rem; /* Font size will be three times 16px*/
+}
+
+/* h1,h2,h3,h4,h5,h6 { */
+    /* font-family: 'Inter',sans-serif; */
+    /* font-family: 'Quicksand', sans-serif; */
+    /* font-weight: 600; */
+    /* text-transform: uppercase; */
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+}
+/* #navbar{ */
+    /* padding:20px; */
+    /* margin: 0; */
+}
+/* #logo{ */
+    /* height:100px; */
+}
+/* h3{ */
+    /* text-align:left; */
+    /* color:purple; */
+}
+/* #banner { */
+    /* width:100%; */
+    /* object-fit: cover;Aspect ratio remains constant */
+}
+/* #about { */
+    /* display:flex;  */
+    /* max-width: 1600px; */
+    /* margin: 0 auto; */
+    /* padding: 8px; */
+}
+/* #description { */
+    /* width: 50%; */
+    /* background-color: grey; */
+    /* text-align: justify; */
+    /* padding-right: 8px; */
+}
+/* #jobs { */
+    /* text-align: center; */
+    /* max-width:800px; */
+    /* margin: 0 auto; */
+    /* padding: 8px; */
+}
+/* #jobs-table{ */
+    /* width:100%; */
+    /* border: 1px solid gray; */
+    /* border-collapse: collapse; */
+}
+/* .jobs-header-row th{ */
+    /* border: 1px solid gray; */
+    /* padding: 8px; */
+    /* background-color: aliceblue; */
+    /* text-align: left; */
+    /* text-align: center; */
+}
+
+/* .jobs-data-row td{ */
+    /* border: 1px solid violet; */
+    /* border-right: 1px solid gray; */
+    /* padding: 8px; */
+}
+/* #jobs-table tr:nth-child(odd) { */
+    /* background-color: wheat; */
+}
+
+/* h2 { */
+    /* text-align: center; */
+}
+/* h3 { */
+    /* margin-bottom: 8px; */
+    /* margin-top: 0; */
+}
+/* #team { */
+    /* width:50%; */
+    /* background-color: violet; */
+    /* text-align: center; */
+}
+/* #team-image{ */
+    /* border-radius: 10px; */
+    /* width:100%; */
+}
+
+
+/* .apply { */
+    /* float: right; */
+}
+
+/* a { */
+    /* text-decoration: none; To remonve the underline in the link */
+}
+/* #footer { */
+    /* background-color: ghostwhite; */
+    /* padding: 8px; */
+    /* margin-top: 30px; */
+    /* text-align: center; */
+}
+/* #footer-links { */
+    /* list-style: none; */
+    /* text-align: center; */
+    /* display: flex; To make the text in line. Flex apply to the parent */
+}
+/* #footer-links li { */
+    /* display: inline;Applies to the child elements */
+    /* margin: 0 16px; */
+}
+/* .copyright { */
+    /* color: grey; */
+}
+
+/*FORMS..... */
+/* #application{ */
+    /* background-color: bisque; */
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    /* padding: 0 8px; */
+}
+/* .form-group{ */
+    /* margin:16px; */
+}
+
+/* #application-form label{ */
+    /* background-color: aquamarine; */
+    /* font-weight: 600; */
+}
+/* #application-form div{ */
+    /* margin:16px; */
+}
+/* #application-form input,select,textarea{ */
+    /* color: #444444; */
+    /* padding: 4px; */
+    /* font-size: 1.25rem; */
+    /* border-radius: 5px; */
+    /* border:1px solid gray; */
+}
+/* .form-group textarea{ */
+    /* width:100%; */
+    /* font-family: Arial; */
+}
+/* .form-group input[type="checkbox"]{ */
+    /* width: 16px; */
+    /* height:16px; */
+}
+/* .form-group input[type="submit"]{ */
+    /* background-color: #3B82F6; */
+    /* color: white; */
+    /* font-weight: 600; */
+    /* padding: 16px; */
+    /* cursor:pointer; */
 
 }
+/* #name{ */
+
+/* } */
